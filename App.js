@@ -4,7 +4,8 @@ import {
   StyleSheet,
   Text
 } from 'react-native';
-import Screen from './app/Screen';
+import Screen from './app/screens/Screen';
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 
 
@@ -14,7 +15,7 @@ function  App()  {
 
   return (
     <Screen style={styles.backgroundStyle}>
-
+        <WelcomeScreen/>
       </Screen>
   );
 };
@@ -22,7 +23,6 @@ function  App()  {
 const styles = StyleSheet.create({
   backgroundStyle : {
     flex : 1,
-    backgroundColor : 'red',
   }
 });
 
